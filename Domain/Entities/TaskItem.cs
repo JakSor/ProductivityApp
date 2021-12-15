@@ -1,7 +1,8 @@
 ﻿
 using static Common.TaskEnums;
 
-namespace Domain
+namespace Domain.Entities
+
 {
     public class TaskItem
 
@@ -15,14 +16,14 @@ namespace Domain
 
         public int TaskTypeId
         {
-            get { return TaskTypeId; }
+            get { return (int)TaskType; }
             set { TaskType  =(TaskTypes)value; }
         }
         public TaskStates TaskState { get; set; } //ToDo: Auto implement testen =TaskState.New
 
         public int TaskStateId
         {
-            get { return TaskStateId; }
+            get { return (int)TaskState; }
             set { TaskState = (TaskStates)value; }
         } 
         //public List<TaskItem> ChildTasks { get; set;}
