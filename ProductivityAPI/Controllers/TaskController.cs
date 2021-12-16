@@ -5,19 +5,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ProductivityAPI.Controllers
-{
-
-        [Route("[controller]")]
-        [ApiController]
-        public class TasksController : ControllerBase
+{        public class TasksController : BaseController
         {
-            private readonly IMediator _mediator;
-
-            public TasksController(IMediator mediator)
-            {
-                _mediator = mediator;
-            }
-
+           
             [Route("CreateTask")]
             [HttpPost]
             public async Task<IActionResult> CreateTask([FromBody] TaskItem task)

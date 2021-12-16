@@ -2,7 +2,6 @@ using Application;
 using Application.Common.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
