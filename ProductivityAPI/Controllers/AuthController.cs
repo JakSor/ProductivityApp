@@ -10,7 +10,9 @@ namespace ProductivityAPI.Controllers
   
     public class AuthController : BaseController    
     {
-        
+        public AuthController(IMediator mediator) : base(mediator)
+        {
+        }
 
         [HttpPost, Route("Login"), AllowAnonymous]
 

@@ -1,0 +1,29 @@
+﻿@page "/dashboard"
+<MudContainer Class="mt-16 px-8" MaxWidth="MaxWidth.False">
+<MudItem md="12">
+    <MudGrid  Justify ="Justify.FlexEnd">
+       
+               <MudItem md="8" >
+                    <MudPaper Style="@($"background:{Colors.LightBlue.Lighten5};")" Class="d-flex align-center justify-center mud-width-full py-8">
+                        ToDo-Tasks
+                    </MudPaper>
+                </MudItem>
+                
+               <MudItem xs="4">
+                    <MudPaper Style="@($"background:{Colors.LightBlue.Lighten5};")" Class="d-flex align-center justify-center mud-width-full py-8">
+                        Add Tasks
+                    </MudPaper>
+                </MudItem>
+                <MudItem xs="2">
+                    <MudPaper Style="@($"background:{Colors.LightBlue.Lighten5};")" Class="d-flex align-center justify-center mud-width-full py-8">
+                        Download items
+                    </MudPaper>
+                </MudItem>
+       
+    </MudGrid>
+
+</MudItem>
+</MudContainer >
+@code {
+
+}
